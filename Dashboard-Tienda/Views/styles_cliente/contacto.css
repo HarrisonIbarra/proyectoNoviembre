@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(https://cdn.pixabay.com/photo/2021/05/27/18/15/motorcycle-6288958_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.contenedorHeader{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(200, 200, 200, 0.800);
+    height: 85px;
+}
+.logo{ 
+    width: 50%; /* TAMAÑO LOGO */
+    height: 50%;   
+}
+
+.logoEncabezado{
+    padding: 1rem 0 0.1rem 4rem; /* PADDING SOLO EN LA PARTE SUPERIOR E INFERIOR */
+    align-items: center;
+    display: flex;
+    /* margin: 0 0 0 2rem; */ /* MARGEN SOLO EN LA PARTE IZQUIERDA */
+}
+.gridContainer{ /* CONTENEDOR DEL MENU HORIZONTAL */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* AGREGA COLUMNAS A LA GRILLA */ 
+/*     grid-template-rows: repeat(3, 1fr) AGREGA FILAS A LA GRILLA */
+    background-color: rgba(30, 30, 30, 0.850);
+}
+.nav{  /* MENU HORIZONTAL */
+    color: rgb(253, 249, 249);
+    grid-column-start: 2; /* ESPECIFICA EN QUE GRILLA VA ESTAR EN CONTENIDO */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav li a{  /* ITEMS DEL MENU  (lista y links) */
+    display: block;
+    padding: 0.6rem 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav li:hover{ /* BACKGROUND DE LA LISTA CUANDO PASE EL CURSOR */
+    background-color: rgba(255, 30, 30, 0.850);
+}
+.menuVertical{  /* MENU VERTICAL ADESPLEGABLE*/ 
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 15rem;
+    padding: 0; 
+    background-color: rgba(30, 30, 30, 0.850);
+    z-index: 2;
+}
+.nav li:hover .menuVertical{ /* DESPLIEGUE DE LA LISTA PASANDO EL CURSOR */
+    display: block;  
+}
+.menuVertical li:hover{  /* BACKGROUND DE LOS ITEMS DE LA LISTA VERTICAL DESPLEGABLE */
+    background-color: rgba(200, 200, 200, 0.800);
+}
+.menuVertical li a{  /* ITEMS DEL MENU VERTICAL DESPLEGABLE */
+    display: block;
+    color: white;
+    padding: 1rem 1rem 1rem 1.3rem;
+}
+.menuVertical li a:hover{  /* COLOR NEGRO PARA LOS ITEMS DEL MENU VERTICAL DESPLEGABLE CUANDO PASE EL CURSOR */
+    color: black;
+}
+
+.imgS{
+    width: 30%;
+    height: 50%;
+    border-radius: 5px;
+    border: 2px solid rgba(200, 200, 200, 0.800);
+    margin: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link{
+    color:white;
+}
+.card{
+    width: 20rem;
+}
+.btn{
+    display: flex; 
+    justify-content: center;
+     
+} 
+/* empieza la modificacion de contacto */
+.contactos{
+    background-color: #4e4b4bc7;
+}
+h1{
+    color: white;
+    font-size: 1.3rem;
+    padding-bottom: 2%;
+    cursor: pointer;
+}
+h1:hover{
+    color: rgb(255, 0, 0);
+    transition:.8s ease all;
+    transform: scale(1);
+    box-shadow: inset -10px 10px 10px rgba(252, 249, 249, 0.2),inset  6px 4px 8px rgba(0,0,0,.2) ;
+}
+h3{
+    justify-content: flex-start;
+    align-items: start;
+    text-align: start;
+    font-size: 0.8rem;
+    padding-bottom: 4%;
+    color: white;
+    cursor: pointer;
+}
+h3:hover{
+    color:rgb(255, 0, 0) ;
+    /* transition:.8s ease all;
+    transform: scale(1);
+    box-shadow: inset -6px 9px 10px rgba(0,0,0,.2),inset  6px -9px 10px rgba(0,0,0,.2) ; */
+}
+svg{
+    color: #ffffff;
+}
+.ubicación{
+    width: 35rem;
+    height: 25rem;
+    padding: 6px;
+}
+.contacto{
+    background-color: rgb(179, 174, 174);
+}
+.contactos{
+    background-color: #141414;
+}
+input{
+    font-size: large;
+    background-position: center;
+    width: 18rem;
+    height: 3rem;
+}
+.contact{
+    border: none;
+    margin-top: 2%;
+}
+textarea {
+    resize: vertical;
+    margin-top: 2%;
+    border: none;
+}
+.enviar{
+    background-color: red;
+    color: white;
+    text-decoration-line: none;
+    padding: 2% 10% 2% 10%;
+}
+.enviar:hover{
+    cursor: pointer;
+    transition:.4s ease all;
+    transform: scale(.9,.9) rotate(-6deg);
+    box-shadow: -7px 7px #141414;
+}

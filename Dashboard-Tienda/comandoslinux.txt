@@ -1,0 +1,21 @@
+codigos de linux / comandos
+kalilinux para hacken etico esta especializado  en esto 
+
+   
+ver carpetas LS
+para cambiar la direccion CD y el nombre de la carpeta----CD utilizar la carpeta
+
+borrar CLEAR
+
+LS -LAH me muestra todo hasta archivos ocultos
+
+ruta completa de donde estoy PWD
+
+crear una carpeta MKDIR el nombre de la carpeta
+
+NANO ARCHIVO.TXT editor de texto crear y editar archivos de texto
+
+VIM editor de texto
+
+eliminar archivos RM el nombre del archivo.txt
+

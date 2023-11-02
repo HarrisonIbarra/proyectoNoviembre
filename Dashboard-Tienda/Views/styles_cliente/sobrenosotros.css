@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.contenedorHeader{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(200, 200, 200, 0.800);
+    height: 85px;
+}
+.logo{ 
+    width: 50%; /* TAMAÑO LOGO */
+    height: 50%;   
+}
+
+.logoEncabezado{
+    padding: 1rem 0 0.1rem 4rem; /* PADDING SOLO EN LA PARTE SUPERIOR E INFERIOR */
+    align-items: center;
+    display: flex;
+    /* margin: 0 0 0 2rem; */ /* MARGEN SOLO EN LA PARTE IZQUIERDA */
+}
+.gridContainer{ /* CONTENEDOR DEL MENU HORIZONTAL */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* AGREGA COLUMNAS A LA GRILLA */ 
+/*     grid-template-rows: repeat(3, 1fr) AGREGA FILAS A LA GRILLA */
+    background-color: rgba(30, 30, 30, 0.850);
+}
+.nav{  /* MENU HORIZONTAL */
+    color: rgb(253, 249, 249);
+    grid-column-start: 2; /* ESPECIFICA EN QUE GRILLA VA ESTAR EN CONTENIDO */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav li a{  /* ITEMS DEL MENU  (lista y links) */
+    display: block;
+    padding: 0.6rem 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav li:hover{ /* BACKGROUND DE LA LISTA CUANDO PASE EL CURSOR */
+    background-color: rgba(255, 30, 30, 0.850);
+}
+.menuVertical{  /* MENU VERTICAL ADESPLEGABLE*/ 
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 15rem;
+    padding: 0; 
+    background-color: rgba(30, 30, 30, 0.850);
+    z-index: 2;
+}
+.nav li:hover .menuVertical{ /* DESPLIEGUE DE LA LISTA PASANDO EL CURSOR */
+    display: block;  
+}
+.menuVertical li:hover{  /* BACKGROUND DE LOS ITEMS DE LA LISTA VERTICAL DESPLEGABLE */
+    background-color: rgba(200, 200, 200, 0.800);
+}
+.menuVertical li a{  /* ITEMS DEL MENU VERTICAL DESPLEGABLE */
+    display: block;
+    color: white;
+    padding: 1rem 1rem 1rem 1.3rem;
+}
+.menuVertical li a:hover{  /* COLOR NEGRO PARA LOS ITEMS DEL MENU VERTICAL DESPLEGABLE CUANDO PASE EL CURSOR */
+    color: black;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.text-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-column {
+    flex: 1;
+    padding: 20px;
+}

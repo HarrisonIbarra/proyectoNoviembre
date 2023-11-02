@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(https://cdn.pixabay.com/photo/2021/05/27/18/15/motorcycle-6288958_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.contenedorHeader{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(200, 200, 200, 0.800);
+    height: 85px;
+}
+.logo{ 
+    width: 50%; /* TAMAÑO LOGO */
+    height: 50%;   
+}
+
+.logoEncabezado{
+    padding: 1rem 0 0.1rem 4rem; /* PADDING SOLO EN LA PARTE SUPERIOR E INFERIOR */
+    align-items: center;
+    display: flex;
+    /* margin: 0 0 0 2rem; */ /* MARGEN SOLO EN LA PARTE IZQUIERDA */
+}
+.gridContainer{ /* CONTENEDOR DEL MENU HORIZONTAL */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* AGREGA COLUMNAS A LA GRILLA */ 
+/*     grid-template-rows: repeat(3, 1fr) AGREGA FILAS A LA GRILLA */
+    background-color: rgba(30, 30, 30, 0.850);
+}
+.nav{  /* MENU HORIZONTAL */
+    color: rgb(253, 249, 249);
+    grid-column-start: 2; /* ESPECIFICA EN QUE GRILLA VA ESTAR EN CONTENIDO */
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.nav li a{  /* ITEMS DEL MENU  (lista y links) */
+    display: block;
+    padding: 0.6rem 1rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav li:hover{ /* BACKGROUND DE LA LISTA CUANDO PASE EL CURSOR */
+    background-color: rgba(255, 30, 30, 0.850);
+}
+.menuVertical{  /* MENU VERTICAL ADESPLEGABLE*/ 
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 15rem;
+    padding: 0; 
+    background-color: rgba(30, 30, 30, 0.850);
+    z-index: 2;
+}
+.nav li:hover .menuVertical{ /* DESPLIEGUE DE LA LISTA PASANDO EL CURSOR */
+    display: block;  
+}
+.menuVertical li:hover{  /* BACKGROUND DE LOS ITEMS DE LA LISTA VERTICAL DESPLEGABLE */
+    background-color: rgba(200, 200, 200, 0.800);
+}
+.menuVertical li a{  /* ITEMS DEL MENU VERTICAL DESPLEGABLE */
+    display: block;
+    color: white;
+    padding: 1rem 1rem 1rem 1.3rem;
+}
+.menuVertical li a:hover{  /* COLOR NEGRO PARA LOS ITEMS DEL MENU VERTICAL DESPLEGABLE CUANDO PASE EL CURSOR */
+    color: black;
+}
+
+.imgS{
+    width: 30%;
+    height: 50%;
+    border-radius: 5px;
+    border: 2px solid rgba(200, 200, 200, 0.800);
+    margin: 2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+/* titulo de accesorios */
+.title{
+    color: rgb(5, 5, 5);
+    padding: 4rem 0 0 0;
+}
+/* modifiacacion de las cards*/
+.btn{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #f90202;
+    box-shadow: 0px 0px 5px 2px #121212;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: rgb(12, 12, 13);
+    border: none ;
+}
+.row{
+    margin: 0 8rem 4rem 8rem;
+
+}
+.card-body{
+    color: rgb(248, 243, 243);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-title{
+    font-size: 1.5rem;
+}
+h6{
+    color: #121212;
+}
+.btnCard{
+    padding: 3% 20% 3% 20%;
+    background-color: #f90202;
+    border-radius: 0.2rem;
+    font-weight: 500;
+}
+a{
+    color: white;
+}
+/* pasar a otro computador desde aqui */
+/* modificacion de los modales */
+.modal-content{
+    background-color: rgb(253, 247, 247);
+    box-shadow: 0px 0px 2px 2px #977f7f;
+    padding: 0;
+    margin: 0;
+    width: 35rem;
+    height: 25rem;
+}
+/* modificacion del titulo del modal */
+.modal-header{
+    background-color: rgb(250, 6, 6);
+}
+/* cerrar el modal*/
+.close{
+    color: #faf4f4;
+}
+.close:hover{
+    background-color: #0e0101;
+}
+#number{
+    font-size: 1rem;
+    height: 30px;
+    width: 30px;
+}
+select{
+    /*border: none;*/
+    font-size: 1rem;
+
+}
+/* modificacion de h3, p, h5 */
+h5{
+    color: #0a0a0a;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h3{
+    color: #050505;
+}
+p{
+    color: #0c0b0b;
+}
+/* modificacion de contenido de los modales */
+.imagen-produ{
+    display: flex;
+    width: 150px;
+    height:150px;
+    padding:.4rem!important ;
+    border-radius:.8rem;
+    overflow: hidden;
+    position: relative;
+    
+}
+/* modificacion de los precios color y alineacion */
+p{
+    color: rebeccapurple;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+/* modificar el footer del modal */
+.modal-footer{
+    justify-content: center;
+    background-color: #f0ecec96;
+}
+/* cerrar el modal*/
+.close{
+    background-color: red;
+    color: #0e0d0d;
+}
+.close:hover{
+    background-color: #f90202;
+}
+.modal-dialog{
+    margin-top: 20vh;
+}
+/* detalles de lo modales de los productos */
+.talla{
+    margin-right: 1rem;
+}
+.description-modal{
+    display: flex;
+    justify-content: start;
+    align-self: self-start;
+}
+.cantidad{
+    margin-right: 1rem;
+}

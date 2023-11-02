@@ -1,0 +1,7 @@
+Nombreproducto
+Referencia
+Cantidad
+PrecioUnitario
+Marca
+Proveedor 
+IdCategoria
